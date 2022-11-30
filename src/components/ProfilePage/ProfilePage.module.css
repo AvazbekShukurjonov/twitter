@@ -1,0 +1,107 @@
+.profile  {
+  width: 649px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin-right: 110px;
+}
+.content__title {
+  backdrop-filter: blur(10px);
+  background: rgba(196, 192, 192, 0.409);
+  width: 629px;
+  padding: 10px;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  cursor: pointer;
+}
+.content__title > h1 {
+    font-size: 22px;
+}
+.content__title> p {
+  font-size: 14px;
+}
+
+.content__header {
+  margin-top: 4rem;
+  height: 200px;
+  width: 649px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.338);
+}
+
+.content__user {
+  /* width: 100%; */
+  width: 649px;
+}
+.content__user>  .user__top {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content__user > img {
+  border-radius: 100%;
+  border: 3px solid #fff;
+  width: 150px;
+  z-index: 1;
+}
+
+.edit_btn {
+  /* position: absolute; */
+  height: 40px;
+  margin-top: 60px;
+  width: 130px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.362);
+  border-radius: 50px;
+}
+
+.user__btm {
+  padding: 0 20px;
+}
+
+.tweets {
+  padding: 0 40px;
+  margin-top: 40px;
+}
+
+.tweets>  ul  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.tweets  > #tweets__list {
+  padding: 10px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  height: 50px;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.tweets > .tweets__tweet {
+  position: relative;
+  transition: 0.2s linear;
+}
+    
+  
+
+
+.line {
+  min-width: 80px;
+  position: relative;
+  top: 3px;
+  height: 3px;
+  transition: 0.2s linear;
+  background: #289fcf;
+}

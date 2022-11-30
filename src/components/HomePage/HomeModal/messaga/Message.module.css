@@ -1,0 +1,99 @@
+.message {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tweet_user_foto {
+  margin-left: 16px;
+  margin-top: 4px;
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+}
+.user_nick {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.user_nick > h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.user_nick > h3:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.user_nick > p {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.user_nick > p:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.heart {
+  margin-left: 290px;
+}
+.heart:hover {
+  background-color: rgb(176, 176, 176);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+.tweet_text {
+  margin-top: 0;
+  font-size: 15px;
+  align-items: center;
+  font-weight: 100;
+  line-height: 20px;
+  color: #0f1419;
+  margin-bottom: 20px;
+}
+.commands {
+  width: 425px;
+  display: flex;
+  margin-bottom: 9px;
+}
+.commands > img {
+  margin-left: 110px;
+  width: 20px;
+  height: 20px;
+}
+.commands > img:hover {
+  background-color: rgb(176, 176, 176);
+  padding: 4px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.commands > .commentary_icon {
+  margin-left: 0;
+}
+.like {
+  display: flex;
+  margin-left: 110px;
+  width: 20px;
+  height: 20px;
+}
+.like > p {
+  margin-top: 0;
+  margin-left: 4px;
+}
+.like:hover {
+  background-color: rgb(176, 176, 176);
+  padding: 6px;
+  border-radius: 10px;
+  padding-right: 21px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.image {
+  width: 400px;
+}
+
+.image > img {
+  width: 100%;
+
+}
