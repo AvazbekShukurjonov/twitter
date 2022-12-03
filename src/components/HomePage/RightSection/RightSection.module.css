@@ -1,10 +1,11 @@
 .RightSection {
-  margin-left: 60px;
+  margin-left: 865px;
+  position: fixed 
 } 
 .search_img {
   position: absolute;
   width: 18px;
-  margin-top: 15px;
+  margin-top: 28px;
   margin-left: 15px;
 }
 
@@ -20,6 +21,7 @@
   background: #ebeef0;
   border-radius: 44px;
   padding-left: 40px;
+  margin-top: 15px;
 }
 
 .input_search:focus {
@@ -31,14 +33,16 @@
   font-size: 22px;
   padding: 8px;
   border-radius: 44px;
-  width: 244px;
+  width: 255px;
+  margin-top: 15px;
 }
 
 .Followers_section{
   background: #ebeef0;
   padding: 8px;
   border-radius: 8px;
-  width: 244px;
+  width: 255px;
+  margin-top: 15px
 
 }
 .Followers_section>h1{

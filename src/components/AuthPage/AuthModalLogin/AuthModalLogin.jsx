@@ -92,6 +92,7 @@ export const AuthModalLogin = ({
         <img src={blue} alt={blue} />
         <h1>Log in to Twitter</h1>
         <input
+          autoFocus={true}
           type="text"
           onChange={nextPage}
           placeholder="Phone number, email address"

@@ -2,6 +2,8 @@ import classNames from "classnames";
 import React, { useEffect } from "react";
 // import Tweet from "../Tweet/Tweet";
 
+import { Message } from "../HomePage/HomeModal/messaga/Message";
+
 import user1 from '../images/user1.svg'
 
 import { Link } from "react-router-dom";
@@ -23,7 +25,7 @@ const Map = [
   },
 ];
 
-export const Profile = ({ about, data }) => {
+export const Profile = ({message, data, setData, setMessage}) => {
   const [filter, setFilter] = React.useState("Tweets");
 
   const name = localStorage.getItem("user");
@@ -52,8 +54,8 @@ export const Profile = ({ about, data }) => {
       <div className={styles.content__title}>
         <h1>{Name}</h1>
         <p>
-          {about && about.message
-            ? about.message.length
+          {message && message.messages
+            ? message.messages.length
             : data
             ? data.length
             : null}{" "}
@@ -96,6 +98,16 @@ export const Profile = ({ about, data }) => {
           </ul>
         </div>
       </div>
+      {message && message.messages ? (
+          message.messages.map((e) => {
+            return <Message text={e.text} img={e.img} key={e.id} />;
+          })
+        ) : data ? data.map(e => {
+          return <Message text={e.text} img={e.img} key={e.id}/>
+        }) : 
+        (
+          <>state = sss</>
+        )}
     </div>
   );
 };

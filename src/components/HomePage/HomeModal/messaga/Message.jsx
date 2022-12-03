@@ -6,7 +6,7 @@ import podelitsa from "../../../images/podelitsa.svg";
 import like from "../../../images/like.svg";
 import red_like from "../../../images/red_like.svg";
 import refresh from "../../../images/refresh.svg";
-import user2 from "../../../images/user2.svg";
+import user1 from "../../../images/user1.svg";
 import commentary from "../../../images/commentary.svg";
 import heart from "../../../images/heart.svg";
 
@@ -29,7 +29,7 @@ export const Message = ({ text, img }) => {
     <>
       <div className={styles.message}>
         <div className={styles.tweet_user_foto}>
-          <img src={user2} alt="" />
+          <img src={user1} alt="" />
         </div>
         <div className="tweet_text_section">
           <div className={styles.user_nick}>
@@ -55,7 +55,6 @@ export const Message = ({ text, img }) => {
                 src={!whiteToRed ? like : red_like}
                 alt="like"
               />
-              <p>3</p>
             </div>
             <img src={podelitsa} alt="podelitsa" />
           </div>

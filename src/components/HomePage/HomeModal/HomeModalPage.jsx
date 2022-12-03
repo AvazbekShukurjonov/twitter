@@ -13,9 +13,7 @@ import schedule from "../../images/schedule.svg";
 import gif from "../../images/gif.svg";
 import styles from "./HomeModalPage.module.css";
 
-export const HomeModalPage = () => {
-  const [data, setData] = useState([]);
-  const [message, setMessage] = useCookies(["messages"]);
+export const HomeModalPage = ({message, data, setData, setMessage}) => {
   const [imageURLs, setImageURLs] = useState([]);
   const [images, setImages] = useState([]);
   const [overed, setOvered] = useState(false)

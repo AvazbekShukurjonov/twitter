@@ -2,6 +2,7 @@
   padding-top: 1rem;
   width: 16rem;
   height: 100vh;
+  position: fixed;
 }
 
 .activeItem {
@@ -144,6 +145,27 @@
   margin-bottom: 10px;
 }
 
-.myAcc__more span {
-  font-size: 30px;
+
+.myAcc__title > img {
+  margin-top: -5px;
+  margin-left: -60px;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.button {
+  background: none;
+  border: none;
+}
+
+.links {
+  position: absolute;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 7px;
+  font-weight: 600;
+  margin-top: -6px;
 }

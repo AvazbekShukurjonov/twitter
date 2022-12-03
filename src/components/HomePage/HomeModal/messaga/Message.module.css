@@ -80,14 +80,14 @@
   margin-top: 0;
   margin-left: 4px;
 }
-.like:hover {
+/* .like:hover {
   background-color: rgb(176, 176, 176);
   padding: 6px;
   border-radius: 10px;
   padding-right: 21px;
   transition: 0.5s ease;
   cursor: pointer;
-}
+} */
 
 .image {
   width: 400px;

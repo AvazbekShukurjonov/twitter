@@ -6,8 +6,11 @@ import styles from "./App.module.css";
 import { Profile } from "./components/ProfilePage/Profile";
 import { AuthPage } from "./components/AuthPage/AuthPage";
 import { useState } from "react";
+import {useCookies} from 'react-cookie'
 
 function App() {
+  const [data, setData] = useState([]);
+  const [message, setMessage] = useCookies(["messages"]);
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -18,9 +21,9 @@ function App() {
           <div className={styles.container}>
             <Navbar />
             <Routes>
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/" element={<HomeModalPage />} />
-              <Route path="*" element={<HomeModalPage />} />
+              <Route path="/profile" element={<Profile message={message} data={data} setData={setData} setMessage={setMessage}/>} />
+              <Route path="/" element={<HomeModalPage message={message} data={data} setData={setData} setMessage={setMessage}/>}/>} />
+              <Route path="*" element={<HomeModalPage message={message} data={data} setData={setData} setMessage={setMessage}/>}/>} />
             </Routes>
             <RightSection />
           </div>

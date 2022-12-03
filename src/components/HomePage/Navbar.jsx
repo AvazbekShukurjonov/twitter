@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { Link } from "react-router-dom";
-
+import user1 from "../images/user1.svg"
 import logo from "../images/logo.svg";
 import home from "../images/home.svg";
 import explore from "../images/explore.svg";
@@ -156,6 +156,7 @@ export const Navbar = () => {
             <div className={styles.myAcc__desc}>
               <div className={styles.profile__icon}></div>
               <div className={styles.myAcc__title}>
+                <img src={user1} alt='ffhhvufh'/>
                 <h4>{Name}</h4>
                 <p>@{localStorage.getItem("user")?.toLocaleLowerCase()}</p>
               </div>
@@ -164,13 +165,8 @@ export const Navbar = () => {
                 window.location.reload()
               }}>
 
-                <Link to="/">log out</Link>
+                <Link className={styles.links} to="/">Log Out</Link>
               </button>
-            </div>
-            <div className={styles.myAcc__more}>
-              <span>.</span>
-              <span>.</span>
-              <span>.</span>
             </div>
           </div>
         </div>

@@ -70,22 +70,6 @@ export const AuthModal = ({ setOpenModal, setOpen, setEmail, setCookiePass, setU
     setPass(!pass);
   };
 
-  // const alertErr = () => {
-  //     if (emailOrPhone === 'Телефон' && typeof phoneOrEmailRef.current.value !== 'number') {
-  //         phoneOrEmailRef.current.style.outline = '2px solid red'
-  //         if (emailOrPhone === 'Телефон' && phoneOrEmailRef.current.value === '') {
-  //             phoneOrEmailRef.current.style.outline = '2px solid #1DA1F2'
-  //         }
-  //     }
-  //     if (emailOrPhone !== 'Телефон' && typeof phoneOrEmailRef.current.value !== 'string') {
-  //         phoneOrEmailRef.current.style.outline = '2px solid red'
-  //         console.log(typeof phoneOrEmailRef.current.value)
-  //         if (emailOrPhone !== 'Телефон' && typeof phoneOrEmailRef.current.value === 'string') {
-  //             phoneOrEmailRef.current.style.outline = '2px solid #1DA1F2'
-  //         }
-  //     }
-  // }
-
   const changeBtnDisable = () => {
     if (
       userNameRef.current.value !== "" &&
@@ -182,10 +166,10 @@ export const AuthModal = ({ setOpenModal, setOpen, setEmail, setCookiePass, setU
               <div className={styles.aboutUser}>
                 <h2>Create an account</h2>
                 <input
+                autoFocus={true}
                   type="text"
                   onChange={() => {
                     changeBtnDisable();
-                    // alertErr()
                   }}
                   ref={userNameRef}
                   placeholder="Name"
@@ -196,7 +180,7 @@ export const AuthModal = ({ setOpenModal, setOpen, setEmail, setCookiePass, setU
                   onChange={() => {
                     changeBtnDisable();
                   }}
-                  type={emailOrPhone ? "text" : "email"}
+                  type={emailOrPhone ? "number" : "email"}
                   placeholder={emailOrPhone ? "Phone number" : "Email address"}
                   required
                 />
@@ -314,8 +298,8 @@ export const AuthModal = ({ setOpenModal, setOpen, setEmail, setCookiePass, setU
                 </p>
               </div>
               <button onClick={()=>{
-                console.log('pls fill the blanks')  
-              }} ref={passRef}>
+                alert('pls fill the blanks')  
+              }} ref={passRef} autoFocus={true}>
                 Sing In
               </button>
             </div>
